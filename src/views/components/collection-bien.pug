@@ -1,0 +1,37 @@
+include ../mixins/popular-item.pug
+.collection
+  .wrapper
+    .collection__wrapper 
+      .collection__title.reveal ФИЛЬТРЫ
+      .collection__blocks
+        form(action="")
+          include ../components/filter.pug
+        .collection__goods
+          .collection__button
+            .collection__button__container
+              i.fa-solid.fa-filters
+          .collection__cards
+            +popular-item(false, true, '/product-bien','/assets/images/collection-bien/bien-1.png', 'bien-1', 'assets/images/collection-bien/logo.svg', 'logo', 'Adonis Matte White')
+            +popular-item(false, true, '/product-bien','/assets/images/collection-bien/bien-2.png', 'bien-2', 'assets/images/collection-bien/logo.svg', 'logo', 'Arch Grey')
+            +popular-item(false, true, '/product-bien','/assets/images/collection-bien/bien-3.png', 'bien-3', 'assets/images/collection-bien/logo.svg', 'logo', 'Concept Light Grey')
+            +popular-item(false, true, '/product-bien','/assets/images/collection-bien/bien-4.png', 'bien-4', 'assets/images/collection-bien/logo.svg', 'logo', 'Joya')
+            +popular-item(false, true, '/product-bien','/assets/images/collection-bien/bien-5.png', 'bien-5', 'assets/images/collection-bien/logo.svg', 'logo', 'Tiger Black')
+            +popular-item(false, true, '/product-bien','/assets/images/collection-bien/bien-6.png', 'bien-6', 'assets/images/collection-bien/logo.svg', 'logo', 'Belgium Stone Black')
+            +popular-item(false, true, '/product-bien','/assets/images/collection-bien/bien-7.png', 'bien-7', 'assets/images/collection-bien/logo.svg', 'logo', 'Concept Grey')
+            +popular-item(false, true, '/product-bien','/assets/images/collection-bien/bien-8.png', 'bien-8', 'assets/images/collection-bien/logo.svg', 'logo', 'Newport')
+            +popular-item(false, true, '/product-bien','/assets/images/collection-bien/bien-9.png', 'bien-9', 'assets/images/collection-bien/logo.svg', 'logo', 'Calacatta Oro')
+            +popular-item(false, true, '/product-bien','/assets/images/collection-bien/bien-10.png', 'bien-10', 'assets/images/collection-bien/logo.svg', 'logo', 'Famous Grey')
+            +popular-item(false, true, '/product-bien','/assets/images/collection-bien/bien-11.png', 'bien-11', 'assets/images/collection-bien/logo.svg', 'logo', 'Arch Grey')
+            +popular-item(false, true, '/product-bien','/assets/images/collection-bien/bien-12.png', 'bien-12', 'assets/images/collection-bien/logo.svg', 'logo', 'Root Silver')
+            +popular-item(false, true, '/product-bien','/assets/images/collection-bien/bien-13.png', 'bien-13', 'assets/images/collection-bien/logo.svg', 'logo', 'Beton Grey')
+            +popular-item(false, true, '/product-bien','/assets/images/collection-bien/bien-14.png', 'bien-14', 'assets/images/collection-bien/logo.svg', 'logo', 'Tiger Black')
+            +popular-item(false, true, '/product-bien','/assets/images/collection-bien/bien-15.png', 'bien-15', 'assets/images/collection-bien/logo.svg', 'logo', 'Zenith')
+          .pagination.reveal
+            a(href="#").active 1
+            a(href="#")  2
+            a(href="#")  3
+            a(href="#")  4
+            a(href="#") 
+              <svg width="11" height="8" viewBox="0 0 11 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6.875 8L5.9125 7.03333L8.35312 4.66667H0V3.33333H8.35312L5.9125 0.966667L6.875 0L11 4L6.875 8Z" fill="#939393"/>
+              </svg>

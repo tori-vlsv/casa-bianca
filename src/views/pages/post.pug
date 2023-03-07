@@ -1,0 +1,34 @@
+extends ../layouts/master.pug
+
+block title
+  title Casa Bianca | Новости
+
+block basicSeo
+  meta(name='description' content='News page')
+  meta(name='keywords', content='news, page')
+
+block manifestBrowserconfigFiles
+  link(href='../manifest.json', rel='manifest')
+  meta(name='msapplication-config' content='../browserconfig.xml')
+
+block content
+
+  +header('news')
+
+  .barba(data-barba="wrapper")
+    main(data-barba="container" data-barba-namespace="news").gapper
+      include ../mixins/breadscrumbs.pug
+      +breadscrumbs(
+        [
+          {
+            href: '/news',
+            title: 'Новости'
+          },
+          {
+            href: '',
+            title: 'Основные керамические тенденции 2022 года'
+          }
+        ]
+      )
+      include ../components/post.pug
+      include ../components/contacts.pug

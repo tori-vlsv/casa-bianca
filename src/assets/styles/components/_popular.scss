@@ -1,0 +1,26 @@
+.popular {
+  .swiper {
+    .swiper-slide {
+      @apply h-[400px] max-h-[400px]
+    }
+  }
+  &__slider {
+    .swiper-button {
+      &-prev,
+      &-next {
+        &:after {
+          @apply hidden
+        }
+        @apply text-black text-[26px] leading-[38px] w-[43px] h-[43px] border-white-900 rounded-[50%] border-2 bg-white
+      }
+      &-prev {
+        @apply left-2 lg:-left-[60px]
+      }
+      &-next {
+        @apply right-2 lg:-right-[60px]
+      }
+    }
+    @apply relative
+  }
+  @apply py-10 lg:pb-[50px] bg-gray-100 overflow-hidden
+}

@@ -1,0 +1,21 @@
+.callback {
+  &__bg {
+    @apply bg-yellow-400 py-12 
+  }
+  &__wrapper {
+    h2 {
+      @apply text-2xl text-center md:text-left leading-8 md:text-[32px] md:leading-[32px] font-light tracking-wide text-gray-300 lg:mr-16
+    }
+    button {
+      &:after {
+        @apply animate-slide content-[''] absolute h-full w-[200px] bg-[rgba(255,255,255,0.1)] -right-[220px] skew-x-[25deg] top-0
+      }
+      span {
+        @apply leading-[23px] uppercase text-gray-300
+      }
+      @apply mt-5 lg:mt-0 border border-solid border-white rounded-[4px] py-[10px] px-[26px] overflow-hidden relative
+    }
+    @apply flex items-center justify-center flex-col lg:flex-row
+  }
+  @apply md:pt-10 lg:py-[90px]
+}

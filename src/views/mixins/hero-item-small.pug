@@ -1,0 +1,9 @@
+mixin hero-item-small(image, title, logo_src, logo_alt)
+  .hero.hero-small(style="background: url("+image+") 50% 50% no-repeat; background-size: cover;")
+    .wrapper 
+      .hero-small__wrapper 
+      if title
+        .hero-small__subtitle.reveal= title
+      if logo_src
+        .hero-small__img
+          img(src=""+logo_src, alt=""+logo_alt)

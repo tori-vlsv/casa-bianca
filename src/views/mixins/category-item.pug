@@ -1,0 +1,5 @@
+mixin category-item(src, alt, title, href)
+  a(href=""+href).categories__item.reveal
+    img(src=""+src, alt=""+alt)
+    h3= title 
+    span Подробнее <i class="fa fa-angle-right"></i>

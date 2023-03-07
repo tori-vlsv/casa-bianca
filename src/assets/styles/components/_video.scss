@@ -1,0 +1,33 @@
+.video {
+  &__wrapper {
+    @apply grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10
+  }
+  &__content {
+    h2 {
+      @apply text-center md:text-left text-3xl md:text-[40px] mb-8 md:mb-[46px] leading-9 md:leading-[40px] text-gray-700 lg:max-w-[390px]
+    }
+    p {
+      @apply text-gray-800 text-lg leading-6 text-center md:text-left
+    }
+    @apply lg:pt-[104px] pb-10 lg:pb-[168px] lg:max-w-[440px] lg:col-span-4
+  }
+  &__container {
+    iframe {
+      @apply w-full h-full object-cover min-h-[300px] lg:min-h-max
+    }
+    @apply flex items-center justify-center relative lg:col-span-8
+  }
+  &__play {
+    svg {
+      @apply w-full h-full
+    }
+    @apply absolute z-10 cursor-pointer w-16 h-16
+  }
+  &__poster {
+    img {
+      @apply w-full h-full object-cover
+    }
+    @apply absolute h-full w-full
+  }
+  @apply md:my-10 lg:my-20 bg-gray-100
+}

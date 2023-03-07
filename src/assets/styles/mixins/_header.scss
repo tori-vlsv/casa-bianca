@@ -1,0 +1,83 @@
+.header {
+  &__heading {
+    @apply mt-0 border-t-transparent py-3 border-t border-b border-solid md:border-t-white md:mt-[30px] transition-all will-change-[margin-top,border-color] duration-300
+  }
+  &__wrapper {
+    @apply relative flex items-center md:justify-center
+  }
+  &__title {
+    @apply text-3xl leading-[30px] font-medium
+  }
+  &__lang {
+    &__current {
+      img {
+        @apply mr-2
+      }
+      span {
+        @apply mr-2 text-xs
+      }
+      i {
+        @apply text-[10px]
+      }
+      @apply flex items-center pl-6 md:pl-[18px] cursor-pointer relative
+    }
+    &:hover {
+      .header__lang__list {
+        @apply visible opacity-100
+      }
+    }
+    &__list {
+      a {
+        @apply text-xs text-black transition-colors will-change-[color] duration-300 hover:text-yellow-400
+      }
+      @apply absolute mt-1 left-[35px] invisible opacity-0 transition-all will-change-[visibility,opacity] duration-300 px-3 bg-white rounded-[4px] pb-1
+    }
+    @apply absolute right-0
+  }
+  &__nav {
+    nav {
+      @apply flex items-center md:justify-center
+    }
+    @apply py-4 border-b border-solid border-white
+  }
+  &__link {
+    &:last-child {
+      @apply mr-0
+    }
+    &.active {
+      @apply text-yellow-400 font-extrabold hover:border-transparent
+    }
+    @apply mr-3 text-sm md:text-base md:mx-[18px] transition-colors will-change-[border-color] duration-300 border-b border-solid border-transparent hover:border-white
+  }
+  &.active {
+    .header__heading {
+      @apply mt-0 border-t-transparent
+    }
+    @apply bg-[rgba(0,0,0,0.8)]
+  }
+  &-white {
+    &.active {
+      .header__heading {
+        @apply mt-0 border-t-transparent
+      }
+      @apply bg-[rgba(255,255,255,0.8)]
+    }
+    .header__link {
+      @apply hover:border-black-900
+    }
+    .header__heading {
+      @apply md:border-black-900 
+    }
+    .header__nav {
+      @apply  border-black-900
+    }
+    .header__lang__list {
+      a {
+        @apply  text-black-900
+      }
+      @apply absolute mt-1 left-[35px] invisible opacity-0 transition-all will-change-[visibility,opacity] duration-300 px-3 bg-white border border-black-900 rounded-[4px] pb-1
+    }
+    @apply text-black-900
+  }
+  @apply fixed z-50 top-0 left-0 w-full will-change-[background-color] duration-300 transition-colors
+}

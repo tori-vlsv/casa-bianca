@@ -1,0 +1,19 @@
+textarea::-webkit-input-placeholder,
+input::-webkit-input-placeholder {
+  @apply font-lato font-normal
+}
+
+textarea::-moz-placeholder,
+input::-moz-placeholder {
+  @apply font-lato font-normal
+}
+
+textarea:-moz-placeholder,
+input:-moz-placeholder {
+  @apply font-lato font-normal
+}
+
+textarea:-ms-input-placeholder,
+input:-ms-input-placeholder {
+  @apply font-lato font-normal
+}

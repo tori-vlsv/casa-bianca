@@ -1,0 +1,24 @@
+.news-item {
+  &__img {
+    @apply md:max-h-[464px] 
+  }
+  &__data {
+    @apply text-gray-800 mt-5 text-sm	leading-[17px] inline-block
+  }
+  &__name {
+    @apply mt-5 text-[26px] leading-[30px] font-medium
+  }
+  &__description {
+    @apply mt-5 text-base leading-[21px]
+  }
+  &__link {
+    a {
+      &:hover {
+        @apply border-black-800
+      }
+      @apply text-base leading-[21px] border-b border-transparent duration-300 will-change-[color] transition-colors
+    }
+    @apply flex justify-end mt-[25px]
+  }
+  @apply text-black-800 max-w-[464px] pb-[9px]
+}

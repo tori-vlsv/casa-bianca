@@ -1,0 +1,43 @@
+.popular__item {
+  &__like {
+    &.active {
+      svg {
+        path {
+          @apply fill-white
+        }
+      }
+      @apply opacity-100
+    }
+    svg {
+      &:hover {
+        path {
+          @apply fill-white
+        }
+      }
+      path {
+        @apply transition-colors will-change-[fill] duration-500 fill-transparent
+      }
+      @apply transition-opacity will-change-[opacity] duration-500
+    }
+    @apply absolute top-[23px] right-[23px] z-20 opacity-0 cursor-pointer
+  }
+  &__bg {
+    @apply object-cover w-full h-full
+  }
+  &__content {
+    img {
+      @apply mb-4
+    }
+    h3 {
+      @apply text-xl leading-6 font-semibold
+    }
+    @apply absolute left-0 bottom-0 w-full flex items-center justify-center flex-col bg-[rgba(0,0,0,0.42)] py-5 text-white
+  }
+  &:hover {
+    .popular__item__like {
+      @apply opacity-100
+    }
+  }
+  @apply h-[400px] max-h-[400px] transition-transform will-change-transform duration-500
+
+}

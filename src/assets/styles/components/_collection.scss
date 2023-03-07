@@ -1,0 +1,37 @@
+.collection {
+  &__button {
+    &__container {
+      @apply rounded-[50%] bg-yellow-400 h-full w-full flex items-center justify-center shadow-lg
+    }
+    @apply fixed w-14 h-14 right-[25px] bottom-[25px] z-10 cursor-pointer lg:hidden
+  }
+  &__goods {
+    @apply h-full w-full
+  }
+  .pagination {
+    @apply lg:border-l lg:border-silver-300
+  }
+  &__title {
+    @apply text-silver-600 uppercase py-[19px] border-b border-silver-300 hidden lg:block
+  }
+  &__blocks {
+    @apply flex border-b border-silver-300
+  }
+  &__cards {
+    @apply w-full lg:border-l lg:border-silver-300 lg:pl-6 pt-10 pb-[50px] lg:pb-[104px] border-b grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-4 gap-x-6 h-full
+  }
+  .swiper-slide {
+    @apply max-w-[342px] max-h-[400px]
+  }
+  .popular__item {
+    &__content {
+      @apply py-[18px]
+    }
+    &__bg {
+      img {
+        @apply mb-3
+      }
+    }
+  }
+  @apply pt-4 pb-10 md:pb-[90px] lg:pb-0
+}

@@ -1,0 +1,12 @@
+.clients__item {
+  &.wide {
+    img {
+      @apply h-[79px] w-[169px] lg:w-[248px]
+    }
+    @apply lg:col-span-3 py-5
+  }
+  img {
+    @apply h-[79px] lg:h-[83px] w-[169px] object-contain
+  }
+  @apply bg-gray-500 flex items-center justify-center lg:col-span-2 py-[18px]
+}

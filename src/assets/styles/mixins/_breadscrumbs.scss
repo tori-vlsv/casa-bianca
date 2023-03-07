@@ -1,0 +1,22 @@
+.breadcrumbs {
+  &__list {
+    li {
+      a,
+      p {
+        @apply text-[10px] md:text-base md:leading-5 italic font-medium 
+      }
+      p {
+        @apply text-black-800 mb-[1px]
+      }
+      a {
+        @apply text-silver-500 duration-300 transition-colors will-change-[border-color] border-b border-transparent hover:border-silver-500
+      }
+      @apply flex items-center
+    }
+    span {
+      @apply text-silver-500 inline-block mx-1 md:mx-2 text-[8px] leading-[12px] md:text-base md:leading-5
+    }
+    @apply flex relative py-3 md:py-[30px] z-10 items-center flex-wrap
+  }
+  @apply border-b border-silver-200
+}

@@ -1,0 +1,21 @@
+.map2 {
+  &__wrapper {
+    @apply flex lg:items-center justify-between lg:flex-row flex-col
+  }
+  &__content {
+    h2 {
+      @apply text-center lg:text-left mb-7 text-3xl md:text-4xl lg:text-5xl lg:leading-[48px] font-extrabold text-gray-300
+    }
+    p {
+      @apply text-[22px] leading-[22px] text-gray-900
+    }
+    @apply flex flex-col lg:items-center justify-center lg:max-w-[555px]
+  }
+  &__image {
+    img {
+      @apply w-full h-full
+    }
+    @apply lg:absolute lg:right-0 lg:max-w-[744px] mt-10 lg:mt-0
+  }
+  @apply py-10 md:py-20 lg:pt-[245px] lg:pb-[360px] relative
+}

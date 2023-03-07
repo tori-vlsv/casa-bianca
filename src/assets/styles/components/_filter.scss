@@ -1,0 +1,137 @@
+.filter {
+  &__close {
+    @apply hidden
+  }
+  .collection__title {
+    @apply hidden
+  }
+  .wrapper {
+    @apply px-0
+  }
+  &.open {
+    .wrapper {
+      @apply px-4
+    }
+    .filter__wrapper {
+      @apply max-h-[calc(var(--vh,1vh)*100-72px)] overflow-y-auto
+    }
+    .filter__close {
+      &:hover {
+        i {
+          @apply text-yellow-400
+        }
+      }
+      i {
+        @apply duration-300 transition-colors will-change-[color]
+      }
+      @apply absolute right-[10px] block cursor-pointer
+    }
+    .collection__title {
+      @apply pt-0 flex items-center relative
+    }
+    @apply fixed w-full h-full top-0 left-0 bg-white z-50 py-7 px-0 block
+  }
+  &__body {
+    @apply hidden
+  }
+  &__header {
+    @apply py-[19px] border-b border-silver-300 flex justify-between items-center pr-2 cursor-pointer
+  }
+  &__arrow {
+    &.active {
+      @apply rotate-180 
+    }
+    @apply cursor-pointer duration-300 transition-transform will-change-transform
+  }
+  &__color {
+    &-white {
+      &:before {
+        @apply bg-white
+      }
+    } 
+    &-black {
+      &:before {
+        @apply bg-black
+      }
+    }
+    &-brown {
+      &:before {
+        @apply bg-brown-400
+      }
+    }
+    &-silver {
+      &:before {
+        @apply bg-silver-700
+      } 
+    }
+    &-cyan {
+      &:before {
+        @apply bg-cyan-400
+      }
+    }
+    &-blue {
+      &:before {
+        @apply bg-blue-400
+      }
+    }
+    &-beige {
+      &:before {
+        @apply bg-beige-500
+      }
+    }
+    &-green {
+      &:before {
+        @apply bg-green-400
+      }
+    }
+    &-graphite {
+      &:before {
+        @apply bg-graphite-400
+      }
+    }
+    &-turquoise {
+      &:before {
+        @apply bg-turquoise-400
+      }
+    }
+  }
+  &__props {
+    label {
+      input {
+        &:checked + p {
+          &:before {
+            @apply bg-black
+          }
+          &:after {
+            @apply opacity-100
+          }
+        }
+      }
+    }
+  }
+  &__checkbox {
+    label {
+      input {
+        &:checked ~ .filter__value {
+          @apply text-black
+        }
+        @apply absolute invisible top-0 left-0
+      }
+      p {
+        &:before {
+          @apply content-[''] border border-gray-800 h-4 w-4 absolute left-0 top-[2px] duration-300 transition-colors will-change-[background-color]
+        }
+        &:after {
+          @apply content-[url('../../assets/images/checked.svg')] h-4 w-4 absolute left-1 -top-[1px] opacity-0 duration-300 transition-opacity will-change-[opacity]
+        }
+        @apply inline-flex relative items-center pl-7 text-xs leading-5 text-gray-800 
+      }
+      span {
+        @apply ml-2  text-gray-800 
+      }
+      @apply block py-[12px] pl-[22px] cursor-pointer relative
+    }
+    @apply flex flex-col 
+  }
+  @apply w-[342px] pr-8 text-black-800 hidden top-[150px] lg:block
+}

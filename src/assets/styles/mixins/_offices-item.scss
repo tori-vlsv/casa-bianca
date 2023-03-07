@@ -1,0 +1,53 @@
+.offices {
+  &__item {
+    &-reverse {
+      @apply lg:flex-row-reverse
+    }
+    &:first-child {
+      @apply mt-0
+    }
+    @apply mt-10 lg:mt-0 lg:max-h-[500px] flex items-center flex-col lg:flex-row mx-auto max-w-[768px] px-4 lg:px-0 lg:max-w-max lg:mx-0
+  }
+  &__image {
+    img {
+      @apply object-cover w-full h-full
+    }
+    @apply lg:w-1/2 lg:h-[500px]
+  }
+  &__content {
+    h3 {
+      @apply mb-7 text-[32px] leading-[38px] text-gray-300 font-black
+    }
+    @apply mt-5 md:mt-0 md:bg-gray-100 lg:pt-[104px] md:p-10 lg:px-[54px] lg:pb-[114px] text-black-700 lg:w-1/2 lg:h-[500px] flex flex-col justify-center
+  }
+  &__info {
+    @apply flex justify-between lg:flex-row flex-col
+  }
+  &__block {
+    h4 {
+      &:before {
+        @apply h-[38px] w-[5px] bg-yellow-400 absolute content-[''] rounded-[10px] left-0
+      }
+      @apply text-lg leading-5 mb-3 pl-4 relative font-extrabold text-gray-300 flex items-center
+    }
+    p {
+      @apply text-gray-300 text-sm leading-4 pl-4
+    }
+    &:first-child {
+      @apply md:w-[55%] mt-0
+    }
+    @apply md:w-[40%] lg:mt-0 mt-4
+  }
+  &__contacts {
+    @apply flex lg:items-center flex-wrap justify-between mt-3 flex-col lg:flex-row
+  }
+  &__contact {
+    p {
+      @apply ml-4 text-base leading-[17px]
+    }
+    &:nth-child(2n+1) {
+      @apply md:w-[55%]
+    }
+    @apply md:w-[40%] mt-7 flex items-center
+  }
+}

@@ -1,0 +1,50 @@
+.map {
+  h2 {
+    @apply font-black text-3xl md:text-4xl lg:text-5xl lg:leading-[58px] mb-8 md:mb-[56px] lg:mb-[88px] text-center
+  }
+  &__content {
+    @apply relative hidden md:flex
+  }
+  &__name {
+    &:nth-child(1) {
+      &::before {
+        @apply content-[''] absolute left-0 top-0 w-[14px] h-[14px] bg-yellow-400 rounded-[50%]
+      }
+    }
+    &:nth-child(2) {
+      &::after {
+        @apply content-[''] absolute left-0 top-0 w-[14px] h-[14px] bg-beige-400 rounded-[50%]
+      }
+      @apply ml-4
+    }
+    @apply text-xs leading-[14px] relative pl-[22px]
+  }
+  &__img {
+    img {
+      @apply w-full object-cover object-center
+    }
+    @apply mt-[44px] hidden md:block
+  }
+  &__text {
+    @apply block md:hidden
+  }
+  &__city {
+    &:last-child {
+      @apply mb-0
+    }
+    &:before {
+      @apply content-[url('../../assets/images/pin.svg')] absolute w-[12px] h-[12px] left-0
+    }
+    @apply relative pl-4 mb-3
+  }
+  &__list {
+    &:last-child {
+      @apply mb-0
+    }
+    @apply mb-5
+  }
+  &__title {
+    @apply mb-5 font-bold text-lg	
+  }
+  @apply pt-[40px] md:pt-[70px] lg:pt-[183px] pb-[40px] md:pb-[70px] lg:pb-[140px] text-black-800
+}

@@ -1,0 +1,20 @@
+include ../mixins/popular-item.pug
+section.popular 
+  .wrapper
+    .popular__wrapper 
+      .section__title
+        h2.reveal Популярные модели
+        p.reveal Откройте для себя уникальные коллекции керамогранитных плиток
+      .popular__slider
+        .swiper.popular-slider.reveal
+          .swiper-wrapper
+            +popular-item(true, false, '/product','/assets/images/popular-item1.png', 'popular-item1', 'assets/images/qua-granite-logo.svg', 'qua-granite', 'Notte nero')
+            +popular-item(true, false, '/product','/assets/images/popular-item2.png', 'popular-item2', 'assets/images/qua-granite-logo.svg', 'qua-granite', 'Notte blue')
+            +popular-item(true, false, '/product','/assets/images/popular-item3.png', 'popular-item3', 'assets/images/bien-logo.svg', 'bien', 'Agatha black')
+            +popular-item(true, false, '/product','/assets/images/popular-item4.png', 'popular-item4', 'assets/images/bien-logo.svg', 'bien', 'Amani bronce')
+            +popular-item(true, false, '/product','/assets/images/popular-item5.png', 'popular-item5', 'assets/images/majorca-tiffany.svg', 'majorca-tiffany', 'Arcides bone')
+            +popular-item(true, false, '/product','/assets/images/popular-item6.png', 'popular-item6', 'assets/images/majorca-tiffany.svg', 'majorca-tiffany', 'Capraia')
+        .swiper-button-prev
+          i.fa.fa-angle-left
+        .swiper-button-next
+          i.fa.fa-angle-right

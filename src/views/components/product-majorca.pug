@@ -1,0 +1,70 @@
+include ../mixins/popular-item.pug
+.product
+  .wrapper
+    .product__wrapper 
+      .product__card
+        .product__slider.reveal 
+          .swiper.product__img-slider
+            .swiper-wrapper
+              .swiper-slide
+                img(src="/assets/images/majorca/product1.png", alt="product1").product__img
+              .swiper-slide
+                img(src="/assets/images/majorca/product2.png", alt="product2").product__img
+              .swiper-slide
+                img(src="/assets/images/majorca/product3.png", alt="product3").product__img
+              .swiper-slide
+                img(src="/assets/images/majorca/product4.png", alt="product4").product__img
+          .swiper.product__img-slides(thumbsSlider="")
+            .swiper-wrapper
+              .swiper-slide
+                img(src="/assets/images/majorca/product1.png", alt="product1").product__img
+              .swiper-slide
+                img(src="/assets/images/majorca/product2.png", alt="product2").product__img
+              .swiper-slide
+                img(src="/assets/images/majorca/product3.png", alt="product3").product__img
+              .swiper-slide
+                img(src="/assets/images/majorca/product4.png", alt="product4").product__img
+          .swiper-button-prev
+            i.fa-light.fa-angle-left
+          .swiper-button-next
+            i.fa-light.fa-angle-right
+        .product__description.reveal
+          .product__like.fixed-like
+            <svg width="35" height="32" viewBox="0 0 35 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M15.6964 28.4784L15.695 28.4771C11.2764 24.4703 7.68928 21.2113 5.19516 18.16C2.71204 15.122 1.41699 12.4123 1.41699 9.52083C1.41699 4.79556 5.10225 1.125 9.81283 1.125C12.483 1.125 15.0624 2.37321 16.7415 4.32962L17.5003 5.21376L18.2592 4.32962C19.9383 2.37321 22.5176 1.125 25.1878 1.125C29.8984 1.125 33.5837 4.79556 33.5837 9.52083C33.5837 12.4123 32.2886 15.122 29.8055 18.16C27.3114 21.2113 23.7243 24.4703 19.3057 28.4771L19.3042 28.4784L17.5003 30.1206L15.6964 28.4784Z" fill="white" stroke="black" stroke-width="2"/>
+            </svg>
+          h2 Cielo
+          p Лаппатированный керамогранит Cielo от итальянской фабрики керамогранита прямоугольной формы, размера 60x120, синего цвета. Данный вид керамогранита, имитирующий камень, подойдет для пола Вашей гостиной.
+          .product__characteristics
+            .product__title Страна производства:
+              img(src="/assets/images/it.svg", alt="tur").product__icon
+              span.product__name Италия
+            .product__title Фабрика:
+              span.product__name Majorca Tiffany
+            .product__title Коллекция:
+              span.product__name Керамогранит 60x120
+            .product__title Размер:
+              span.product__options 60x120см
+            .product__title Толщина:
+              span.product__options 0,9см
+            .product__title Поверхность:
+              span.product__options Лаппатрованная
+            .product__title.product__colors Цвет:
+              span.product__color.product__color-blue
+              span.product__name Синий
+            .product__title Дизайн:
+              span.product__name Мрамор
+    .product__collections.reveal Другие коллекции фабрики
+    .popular__slider.reveal
+      .swiper.popular-slider
+        .swiper-wrapper
+          +popular-item(true, false, '#','/assets/images/majorca/item-1.png', 'product-item1', 'assets/images/majorca/logo.svg', 'majorca', 'Marea')
+          +popular-item(true, false, '#','/assets/images/majorca/item-2.png', 'product-item2', 'assets/images/majorca/logo.svg', 'majorca', 'Norgay')
+          +popular-item(true, false, '#','/assets/images/majorca/item-3.png', 'product-item3', 'assets/images/majorca/logo.svg', 'majorca', 'Onyx Latte')
+          +popular-item(true, false, '#','/assets/images/majorca/item-4.png', 'product-item4', 'assets/images/majorca/logo.svg', 'majorca', 'Oposto')
+          +popular-item(true, false, '#','/assets/images/majorca/item-5.png', 'product-item5', 'assets/images/majorca/logo.svg', 'majorca', 'Patchwork')
+          +popular-item(true, false, '#','/assets/images/majorca/item-6.png', 'product-item6', 'assets/images/majorca/logo.svg', 'majorca', 'Marmaros')
+      .swiper-button-prev
+        i.fa-light.fa-angle-left
+      .swiper-button-next
+        i.fa-light.fa-angle-right

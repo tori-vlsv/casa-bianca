@@ -1,0 +1,16 @@
+mixin offices-item(className, src, alt, title, blocks, contacts)
+  .offices__item.reveal(class=""+className)
+    .offices__image 
+      img(src=""+src, alt=""+alt)
+    .offices__content 
+      h3= title
+      .offices__info
+        for block in blocks
+          .offices__block
+            h4 !{block.title}
+            p= block.text
+      .offices__contacts
+        for contact in contacts
+          .offices__contact
+            img(src=""+contact.src, alt=""+contact.alt)
+            p !{contact.text}

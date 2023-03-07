@@ -1,0 +1,39 @@
+.hero {
+  &__wrapper {
+    @apply min-h-screen flex flex-col items-center justify-center relative z-10
+  }
+  &__logo {
+    svg {
+      @apply w-full h-full
+    }
+    @apply xl:mb-10 max-w-[200px] md:max-w-[40vh] xl:max-w-full mb-10 mt-10
+  }
+  &__subtitle {
+    @apply text-2xl xl:text-[32px] leading-7 xl:leading-[38px] font-light xl:mb-28 max-w-[600px] xl:max-w-[800px] text-center
+  }
+  &__scroll {
+    svg {
+      @apply w-full
+    }
+    @apply absolute left-1/2 -translate-x-1/2 bottom-8 xl:bottom-20 cursor-pointer max-w-[20px] xl:max-w-full
+  }
+  &__roller {
+    @apply animate-toggle
+  }
+  &__bg {
+    @apply min-h-screen absolute left-0 top-0 w-full h-full will-change-transform
+  }
+  &-small {
+    &__subtitle {
+      @apply text-2xl md:text-4xl md:leading-[42px] text-center font-light relative z-10
+    }
+    &__img {
+      @apply max-w-[207px] mx-auto
+    }
+    &__bg {
+      @apply absolute left-0 top-0 w-full h-[350px] will-change-transform
+    }
+    @apply relative overflow-hidden py-[154px]
+  }
+  @apply relative overflow-hidden
+}

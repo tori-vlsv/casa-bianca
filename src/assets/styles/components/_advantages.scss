@@ -1,0 +1,6 @@
+.advantages {
+  &__items {
+    @apply grid grid-cols-1 md:grid-cols-12 lg:grid-cols-3 gap-8 md:gap-12 max-w-[1104px] mx-auto
+  }
+  @apply py-10 lg:pt-[50px] lg:pb-[92px] bg-gray-100
+}

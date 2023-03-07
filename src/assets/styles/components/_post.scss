@@ -1,0 +1,66 @@
+.post {
+  &__header {
+    @apply flex flex-col lg:flex-row items-center lg:gap-x-[100px] pb-[30px] lg:pb-[56px] border-b border-silver-300
+  }
+  &__title {
+    @apply text-2xl md:text-[40px] md:leading-[40px] font-semibold mb-4 lg:mb-8
+  }
+  &__description {
+    @apply text-base lg:text-2xl mb-8 lg:mb-0
+  }
+  &__info {
+    @apply max-w-[670px]
+  }
+  &__slider {
+    .swiper {
+      &-button {
+        &-prev,
+        &-next {
+          &:after {
+            @apply hidden
+          }
+          @apply text-black text-xl leading-[32px] md:text-[26px] md:leading-[38px] w-[35px] h-[35px] md:w-[43px] md:h-[43px] border-white-900 rounded-[50%] border-2 bg-white
+        }
+        &-prev {
+          @apply left-4
+        }
+        &-next {
+          @apply right-4
+        }
+      }
+      @apply relative
+    }
+    @apply max-w-[660px] relative w-full
+  }
+  &__main {
+    @apply mt-5 lg:mt-10 flex gap-x-[26px]
+  }
+  &__content {
+    @apply lg:w-[952px] lg:pr-[114px] lg:border-r lg:border-silver-300
+  }
+  &__block {
+    &:last-child {
+      @apply mb-0
+    }
+    @apply mb-7 lg:mb-[56px]
+  }
+  &__text {
+    &:last-child {
+      @apply mb-0
+    }
+    @apply mb-4 lg:mb-8 text-base lg:text-[22px] lg:leading-[32px]
+  }
+  &__cards {
+    @apply grid grid-cols-1 gap-y-[64px] justify-items-center
+  }
+  &__card {
+    @apply max-w-[342px] h-full
+  }
+  &__sidebar {
+    @apply mx-auto hidden lg:block
+  }
+  &__mention {
+    @apply text-2xl leading-10 ml-0 xl:-ml-[44px] mb-[64px] font-semibold
+  }
+  @apply pt-8 lg:pt-[48px] text-black-800 pb-10 md:pb-[90px] lg:pb-[170px]
+}

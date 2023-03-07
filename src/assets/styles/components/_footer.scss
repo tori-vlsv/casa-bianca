@@ -1,0 +1,14 @@
+.footer {
+  &__social {
+    a {
+      i {
+        @apply text-yellow-400
+      }
+      @apply mr-2 border border-solid border-gray-000 w-[40px] md:w-[58px] h-[40px] md:h-[58px] flex items-center justify-center
+    }
+    @apply flex items-center py-5 md:py-10 lg:pt-[50px] lg:pb-[64px] border-b border-solid border-gray-400
+  }
+  &__copy {
+    @apply py-5 md:py-10 text-silver-400 text-sm leading-[16px] font-light text-center md:text-left
+  }
+}

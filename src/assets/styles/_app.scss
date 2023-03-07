@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+  Main parameters styles
+*/
+@import "./base/fonts";
+@import "./base/typography";
+
+/*
+  Base styles
+*/
+@import "./base/global";
+
+/*
+  Mixins styles
+*/
+@import "./mixins/header";
+@import "./mixins/categories-item";
+@import "./mixins/popular-item";
+@import "./mixins/advantages-item";
+@import "./mixins/clients-item";
+@import "./mixins/offices-item";
+@import "./mixins/breadscrumbs";
+@import "./mixins/hero-item";
+@import "./mixins/news-item";
+
+/*
+  Components styles
+*/
+@import "./components/about";
+@import "./components/collections";
+@import "./components/product";
+@import "./components/filter";
+@import "./components/collection";
+@import "./components/achievements";
+@import "./components/map";
+@import "./components/map2";
+@import "./components/categories";
+@import "./components/popular";
+@import "./components/video";
+@import "./components/callback";
+@import "./components/advantages";
+@import "./components/clients";
+@import "./components/contacts";
+@import "./components/offices";
+@import "./components/news";
+@import "./components/post";
+@import "./components/footer";

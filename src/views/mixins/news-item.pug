@@ -1,0 +1,8 @@
+mixin news-item(img_src, img_alt, data, title, description, href)
+  .news-item.reveal
+    img.news-item__img(src=""+img_src, alt=""+img_alt)
+    time.news-item__data= data
+    .news-item__name= title
+    .news-item__description= description
+    .news-item__link
+      a(href=""+href) Продолжить чтение

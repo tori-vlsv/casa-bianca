@@ -1,0 +1,32 @@
+extends ../layouts/master.pug
+
+block title
+  title Casa Bianca | Коллекции
+
+block basicSeo
+  meta(name='description' content='Collections page')
+  meta(name='keywords', content='collections, page')
+
+block manifestBrowserconfigFiles
+  link(href='../manifest.json', rel='manifest')
+  meta(name='msapplication-config' content='../browserconfig.xml')
+
+block content
+
+  +header('collections')
+
+  .barba(data-barba="wrapper")
+    main(data-barba="container" data-barba-namespace="collections").gapper
+      include ../mixins/hero-item-small.pug
+      +hero-item-small('/assets/images/collections-bg.png', 'Коллекции', '', '')
+      include ../mixins/breadscrumbs.pug
+      +breadscrumbs(
+        [
+          {
+            href: '',
+            title: 'Коллекции'
+          }
+        ]
+      )
+      include ../components/collections.pug
+      include ../components/contacts.pug

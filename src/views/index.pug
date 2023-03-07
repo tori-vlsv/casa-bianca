@@ -1,0 +1,28 @@
+extends ./layouts/master.pug
+
+block title
+  title Casa Bianca | Главная
+
+block basicSeo
+  meta(name='description' content='Index page')
+  meta(name='keywords', content='index, page')
+
+block manifestBrowserconfigFiles
+  link(href='../manifest.json', rel='manifest')
+  meta(name='msapplication-config' content='../browserconfig.xml')
+
+block content
+
+  +header('home')
+
+  .barba(data-barba="wrapper")
+    main(data-barba="container" data-barba-namespace="home")
+      include ./mixins/hero-item.pug
+      +hero-item('/assets/images/hero-bg.png', '#categories')
+      include ./components/categories.pug
+      include ./components/popular.pug
+      include ./components/video.pug
+      include ./components/advantages.pug
+      include ./components/callback.pug
+      include ./components/clients.pug
+      include ./components/contacts.pug

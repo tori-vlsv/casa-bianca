@@ -1,0 +1,23 @@
+.categories__item {
+  img {
+    @apply w-full h-full object-cover absolute left-0 top-0 transition-transform will-change-transform duration-700
+  }
+  h3 {
+    @apply px-[14px] py-2 text-gray-200 font-light text-xl lg:text-2xl leading-[32px] bg-yellow-400 mb-2 relative z-10
+  }
+  span {
+    i {
+      @apply ml-2 text-xs
+    }
+    @apply inline-flex items-center text-sm leading-[14px] pl-[15px] py-2 pr-[18px] bg-blue-200 relative z-10
+  }
+  &:nth-child(3) {
+    @apply md:col-start-2 md:col-end-3 md:row-start-1 md:row-end-3
+  }
+  &:hover {
+    img {
+      @apply scale-105
+    }
+  }
+  @apply min-h-[290px] relative p-4 flex flex-col items-start overflow-hidden
+}

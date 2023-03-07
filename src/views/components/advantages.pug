@@ -1,0 +1,10 @@
+include ../mixins/advantages-item.pug
+section.advantages 
+  .wrapper
+    .advantages__wrapper
+      .section__title 
+        h2.reveal Здесь все подстроено под Вас
+      .advantages__items
+        +advantages-item('/assets/images/advantages-item1.svg', 'advantages-item1', 'На связи по любым <br> вопросам 24/7', 'Всегда готовы ответить <br> на возникшие у Вас вопросы')
+        +advantages-item('/assets/images/advantages-item2.svg', 'advantages-item2', 'Гарантия <br> лучшей цены', 'Мы заключили крупные контракты <br> с ведущими поставщиками')
+        +advantages-item('/assets/images/advantages-item3.svg', 'advantages-item3', 'Поставки <br> в кратчайший срок', 'Наши профессионалы построят <br> логистические цепочки любой сложности')

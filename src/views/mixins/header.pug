@@ -1,0 +1,22 @@
+mixin header(currentPage)
+  header.header
+    .header__heading 
+      .wrapper
+        .header__wrapper
+          a(href="/")
+            h1.header__title CASA BIANCA
+          .header__lang
+            .header__lang__current
+              img(src="/assets/images/ru.svg", alt="ru")
+              span Русский
+              i.fa.fa-angle-down
+            .header__lang__list
+              a(href="#") English
+    .header__nav
+      .wrapper
+        nav
+          a.header__link(href='/', class=currentPage === 'home' ? 'active' : '') Главная
+          a.header__link(href='/about', class=currentPage === 'about' ? 'active' : '') О нас
+          a.header__link(href='/collections', class=currentPage === 'collections' ? 'active' : '') Коллекции
+          a.header__link(href='/news', class=currentPage === 'news' ? 'active' : '') Новости
+          a.header__link(href='/contacts', class=currentPage === 'contacts' ? 'active' : '') Контакты
