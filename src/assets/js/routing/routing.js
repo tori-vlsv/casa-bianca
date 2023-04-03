@@ -26,7 +26,12 @@ function checkHeader(nextPath) {
     nextPath == '/about/' || 
     nextPath == '/contacts' || 
     nextPath == '/contacts/' || 
-    nextPath == '/'
+    nextPath == '/' ||
+    nextPath == '/casa-bianca/about' || 
+    nextPath == '/casa-bianca/about/' || 
+    nextPath == '/casa-bianca/contacts' || 
+    nextPath == '/casa-bianca/contacts/' || 
+    nextPath == '/casa-bianca/'
   ) {
     header.removeClass('header-white');
   } else {
